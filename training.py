@@ -1,8 +1,11 @@
-import cv2 as cv
-import os
-import numpy as np
+import cv2 as cv         # cv2 is used for image processing
+import os                # os is used for directory related processing
+import numpy as np       # numpy is very famous for handling arrays / matrices 
 
-people = ['Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kaling','Muddasar Khan']
+# following is list of person whose faces you want to detect. There is Faces directory. Open it and you will find two more directories name train and val
+# in each directory you will find 'Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kaling' directories. you can add more for more persons.
+# add pictures in each directory
+people = ['Ben Afflek', 'Elton John', 'Jerry Seinfield', 'Madonna', 'Mindy Kaling']
 
 p =[]
 for i in os.listdir(r"Faces\train"):
